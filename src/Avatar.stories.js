@@ -59,3 +59,12 @@ export const Large = (args) => (
     />
   </div>
 );
+const Template = args => <Avatar {...args} />;
+
+export const Controls = Template.bind({});
+Controls.args = {
+  loading: false,
+  size: 'tiny',
+  username: 'Dominic Nguyen',
+  src: 'https://secure.gravatar.com/avatar/5763b7e66b78b378b75814165b9518df?d=mm&s=48',
+};
